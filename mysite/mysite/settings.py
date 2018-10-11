@@ -7,6 +7,8 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
+# Import secret settings that will not be available on Git
+from secrets import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -15,9 +17,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2b*^*m_)y^7fr5!gkg_-#l3rf_m(ck#maczbqcqw2pf(@xlpac'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
